@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bizim Toptan</title>
+	<link rel="shortcut icon" href="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1689417.svg">
+    <link href="bizimtoptan.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="headertop">
+          <ul class="left">
+            <li><a href="#">Kurumsal</a></li>
+            <li><a href="#">Yatırımcı İlişkileri</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#">E-Katalog</a></li>
+          </ul>
+        </div>
+        <div class="headercenter">
+          <div class="logo">
+            <img
+              src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1689417.svg"
+              alt="logo"
+            />
+          </div>
+          <div class="searchingform">
+            <form>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="text"
+                placeholder="Banetti Makarna Çeşitleri 500Gr 6,90TL"
+              />
+              <button type="submit" id="search_submit">Ara</button>
+            </form>
+          </div>
+          <div class="links">
+            <i class="fas fa-user-circle fa-2x"></i>
+            <i class="fas fa-shopping-basket fa-2x"></i>
+            <ul>
+              <li><a href="#">Giriş Yap</a></li>
+              <li><a href="#">Sepetim</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="headerbottom">
+          <ul class="mainlist">
+            <li>
+              <i class="fa-solid fa-bars"></i><a class="main-a" href="#">Tüm Katogoriler</a
+              ><i class="fa-solid fa-caret-down"></i>
+              <ul class="first list">
+                <li><a href="#">Temel Gıda</a></li>
+                <li><a href="#">Şarküteri & Kahvaltılık</a></li>
+                <li><a href="#">Atıştırmalık</a></li>
+                <li><a href="#">İçecek</a></li>
+                <li><a href="#">Temizlik</a></li>
+                <li><a href="#">kişisel Bakım</a></li>
+                <li><a href="#">Gıda Dışı</a></li>
+                <li><a href="#">Bebek Ürünleri</a></li>
+              </ul>
+            </li>
+            <li id="campaigns">
+              <i class="fa-solid fa-bullhorn"></i><a id="campaign" class="main-a" href="#">Kampanyalar</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-truck-fast"></i
+              ><a class="main-a" href="#">Kargo ile Teslimat</a
+              ><i class="fa-solid fa-caret-down"></i>
+              <ul class="third list">
+                <li><a href="#">Kargo ile Teslimat</a></li>
+                <li><a href="#">Tıkla GEl Al</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+   
+         <div class="slidercontainer" onMouseOver="stop()" onMouseOut="start()">
+    <div class="images"><img src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1813840.jpeg"></div>
+    <div class="images"><img src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1796706.jpeg"></div>
+    <div class="images"><img src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1804617.jpeg"></div>
+    <div class="images"><img src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1795031.jpeg"></div>
+    <div class="images"><img src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1795062.jpeg"></div>
+    <div class="images"><img src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1795029.jpeg"></div>
+    <div class="images"><img src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1802672.jpeg"></div>
+    <div class="images"><img src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1791659.jpeg"></div>
+    <div class="images"><img src="https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1752745.jpeg"></div>
+    <div class="forward"  onClick="forward()"><i class="fa-solid fa-circle-chevron-right fa-2xl"></i></div>
+    <div class="back" onClick="back()"><i class="fa-solid fa-circle-chevron-left fa-2xl"></i></div>
+  </div>
+         
+
+        <div class="banner">
+          <img
+            src="https://img-bizimtoptan.mncdn.com/mnresize/980/980/Content/Images/Originals/1813930_0.jpeg"
+          />
+          <img
+            src="https://img-bizimtoptan.mncdn.com/mnresize/980/980/Content/Images/Originals/1792072_0.jpeg"
+          />
+          <img
+            src="https://img-bizimtoptan.mncdn.com/mnresize/980/980/Content/Images/Originals/1791661_0.jpeg"
+          />
+          <img
+            src="https://img-bizimtoptan.mncdn.com/mnresize/980/980/Content/Images/Originals/1796696_0.jpeg"
+          />
+        </div>
+
+        <div class="products">
+          <div class="filters"></div>
+          <div class="product-slider products-showcase"></div>
+          <div id="left-products-showcase" class="leftArrow">
+            <img src="./assets//chevronLeft.png" alt="left-chevron"/>
+          </div>
+          <div id="right-products-showcase" class="rightArrow">
+            <img src="./assets//chevronRight.png" alt="right-chevron"/>
+          </div>
+        </div>
+
+        <div class="products">
+          <h2>Bizim Toptan'a Özel</h2>
+          <div class="product-slider special-for-bizim-toptan"></div>
+          <div id="left-special-for-bizim-toptan" class="leftArrow">
+            <img src="./assets//chevronLeft.png" alt="left-chevron" />
+          </div>
+          <div id="right-special-for-bizim-toptan" class="rightArrow">
+            <img src="./assets//chevronRight.png" alt="right-chevron" />
+          </div>
+        </div>
+     <div class="banner">
+          <img
+            src="https://img-bizimtoptan.mncdn.com/mnresize/980/980/Content/Images/Originals/1802734_0.jpeg" alt="Redbull"
+          />
+          <img
+            src="https://img-bizimtoptan.mncdn.com/mnresize/980/980/Content/Images/Originals/1797182_0.jpeg" alt="Caykur"
+          />
+          <img
+            src="https://img-bizimtoptan.mncdn.com/mnresize/980/980/Content/Images/Originals/1777407_0.jpeg" alt="Reis Products"
+          />
+          <img
+            src="https://img-bizimtoptan.mncdn.com/mnresize/980/980/Content/Images/Originals/1801740_0.jpeg" alt="Tat Gıda Kolisi"
+          />
+        </div>
+
+        <div class="products">
+          <h2>Popüler Ürünler</h2>
+          <div class="product-slider popular-products"></div>
+          <div id="left-popular-products" class="leftArrow" >
+            <img src="./assets//chevronLeft.png" alt="left-chevron" />
+          </div>
+          <div id="right-popular-products" class="rightArrow">
+            <img src="./assets//chevronRight.png" alt="right-chevron"  />
+          </div>
+        </div>
+
+        <div class="products">
+          <h2>Size Özel Ürünler</h2>
+          <div class="product-slider special-for-you"></div>
+          <div id="left-special-for-you" class="leftArrow">
+            <img src="./assets//chevronLeft.png" alt="left-chevron" />
+          </div>
+          <div id="right-special-for-you" class="rightArrow">
+            <img src="./assets//chevronRight.png" alt="right-chevron"  />
+          </div>
+        </div>
+
+        <footer id="footertop">
+          <div class="container">
+            <ul id="footer_ul">
+              <li>
+                <h3>Kurumsal</h3>
+                <br />
+                <ul>
+                  <li><a href="#">Hakkımızda</a></li>
+                  <li><a href="#">Markalarımız</a></li>
+                  <li><a href="#">Mağazalarımız</a></li>
+                  <li><a href="#">Bizim Kart</a></li>
+                  <li><a href="#">Müşterilerimiz</a></li>
+                  <li><a href="#">İnsan Kaynakları</a></li>
+                  <li><a href="#">İş Başvuru Formu</a></li>
+                  <li><a href="#">Bilgi Toplumu Hizmetleri</a></li>
+                  <li><a href="#">Yatırımcı İlişkileri</a></li>
+                  <li><a href="#">İletişim</a></li>
+                  <li><a href="#">Kumanya Talebi</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>Yardım</h3>
+                <br />
+                <ul>
+                  <li><a href="#">Müşteri Hizmetleri</a></li>
+                  <li><a href="#">SSS</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>Yasal</h3>
+                <br />
+                <ul>
+                  <li><a href="#">İptal İade</a></li>
+                  <li><a href="#">KVKK</a></li>
+                  <li><a href="#">Çerez Politikasır</a></li>
+                  <li><a href="#">Üyelik Sözleşmesi</a></li>
+                  <li><a href="#">Elektronik Ticari İleti İzni</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>Hesabım</h3>
+                <br />
+                <ul>
+                  <li><a href="#">Siparişlerim</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </footer>
+        <footer id="footerbottom">
+          <div class="box left">
+            <img
+              src="https://www.bizimtoptan.com.tr/Themes/BizimToptan/Content/_images/yildiz-holding-logo.png"
+            />
+            <p><span id="origin">Senesozdel All right reserved © 2022 </span></p>
+          </div>
+          <div class="box right">
+            <ul>
+              <li><a href="#">444 92 46</a></li>
+              <li><i class="fab fa-whatsapp-square"></i></li>
+              <li><i class="fab fa-facebook-square"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
